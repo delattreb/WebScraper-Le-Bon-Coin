@@ -10,7 +10,7 @@ config_file = "config/config.ini"
 
 
 def setConfig():
-    config = configparser.ConfigParser ()
+    config = configparser.ConfigParser()
     
     # EMAIL
     config['EMAIL'] = {}
@@ -35,15 +35,15 @@ def setConfig():
     config['SEARCH']['things2'] = 'pentax boitier,30,300'
     config['SEARCH']['things3'] = 'mini serre plante,5,30'
     
-    BASE_DIR = os.path.dirname (os.path.abspath (__file__))
-    db_path = os.path.join (BASE_DIR, config_file)
-    with open (db_path, 'w') as configfile:
-        config.write (configfile)
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    db_path = os.path.join(BASE_DIR, config_file)
+    with open(db_path, 'w') as configfile:
+        config.write(configfile)
 
 
 def getConfig():
-    config = configparser.RawConfigParser ()
-    BASE_DIR = os.path.dirname (os.path.abspath (__file__))
-    db_path = os.path.join (BASE_DIR, config_file)
-    config.read (db_path)
+    config = configparser.RawConfigParser()
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    db_path = os.path.join(BASE_DIR, config_file)
+    config.read(db_path)
     return config
