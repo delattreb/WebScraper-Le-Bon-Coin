@@ -9,26 +9,24 @@ from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-from lib import com_config
-from lib import com_logger
+from lib import com_config, com_logger
 
 
-def send_mail_gmail(subject, table, filename=''):
+def send_mail_gmail(subject, table, filename = ''):
     config = com_config.getConfig()
     logger = com_logger.Logger('Email')
     logger.info('Sending email')
     msg = MIMEMultipart()
-
-    body=''
+    
+    body = ''
     for line in table:
         body += line + "<br>"
-
-
+    
     msg['From'] = config['EMAIL']['from']
     msg['To'] = config['EMAIL']['to']
     msg['Subject'] = subject
     msg.attach(MIMEText(body, 'html'))
-
+    
     try:
         if len(filename) > 0:
             attachment = open("./" + filename, "rb")
@@ -37,7 +35,7 @@ def send_mail_gmail(subject, table, filename=''):
             encoders.encode_base64(part)
             part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
             msg.attach(part)
-
+        
         logger.debug('Try to connect SMTP')
         server = smtplib.SMTP('smtp.gmail.com', 587)
         logger.debug('Connected to SMTP')
@@ -52,4 +50,3 @@ def send_mail_gmail(subject, table, filename=''):
         server.quit()
     except:
         logger.critical('Error sending mail')
-
