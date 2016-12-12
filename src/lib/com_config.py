@@ -31,10 +31,11 @@ def setConfig():
     
     # Search
     config['SEARCH'] = {}
-    config['SEARCH']['things1'] = 'maquette 1/35,10,25'
-    config['SEARCH']['things2'] = 'pentax boitier,30,300'
-    config['SEARCH']['things3'] = 'mini serre plante,5,30'
-    
+    config['SEARCH']['things1'] = 'maquette tamiya 1/35,1,30'
+    config['SEARCH']['things2'] = 'raspberry,5,30'
+    config['SEARCH']['things3'] = 'vieille radio,5,30'
+    config['SEARCH']['things4'] = 'couture,5,150'
+
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     db_path = os.path.join(BASE_DIR, config_file)
     with open(db_path, 'w') as configfile:
