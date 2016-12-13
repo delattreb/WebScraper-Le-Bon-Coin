@@ -25,10 +25,10 @@ class Scraper:
         conf = com_config.Config()
         config = conf.getconfig()
         for i in range(1, 50):
-            strthings = 'things' + str(i)
+            strThings = 'things' + str(i)
             try:
-                if len(config['SEARCH'][strthings]) != 0:
-                    search_list.append(config['SEARCH'][strthings])
+                if len(config['SEARCH'][strThings]) != 0:
+                    search_list.append(config['SEARCH'][strThings])
             except:
                 break
         
@@ -54,8 +54,9 @@ class Scraper:
                 for section in soup.find_all("section", class_ = "tabsContent block-white dontSwitch"):
                     for li in section.find_all("li"):
                         link = li.find("a", class_ = "list_item clearfix trackable")["href"]
-                        index = li.find("a", class_ = "list_item clearfix trackable")["data-info"].strip().split(",", 7)[2].split(":", 2)[1].replace('"', "").strip()
-                        # container = source.find('div', attrs={'index':'dlbox'})
+                        idx = li.find("a", class_ = "list_item clearfix trackable")["data-info"].strip().split(",", 7)[2].split(":", 2)[1].replace('"', "").strip()
+                        # container = source.find('div', attrs={'id':'dlbox'})
+                        imglink=''
                         try:
                             imglink = li.find("span", class_ = "lazyload")["data-imgsrc"]
                         except Exception as exp:
@@ -71,16 +72,17 @@ class Scraper:
                                 prix = 0
                             
                             if (prix >= prix_min) and (prix <= prix_max):
-                                if com_sqlite.select(index) == 0:
+                                if com_sqlite.select(idx) == 0:
                                     
                                     logger.debug('Find: ' + titre)
                                     
-                                    com_sqlite.insert(index)
+                                    com_sqlite.insert(idx)
                                     contenuhtml.append("<H2>" + str(titre) + "</H2>")
                                     for subitem in item.find_all("p", class_ = "item_supp"):
                                         contenuhtml.append(subitem.text.strip().replace("\n", "").replace(" ", ""))
                                     contenuhtml.append("<STRONG>" + str(prix) + " euro</STRONG>")
-                                    contenuhtml.append("<a href='" + str(link) + "'><img src='http:" + str(imglink) + "'></a>")
+                                    if imglink:
+                                        contenuhtml.append("<a href='" + str(link) + "'><img src='http:" + str(imglink) + "'></a>")
                                     contenuhtml.append("\n")
                 index += 1
                 logger.info('Page : ' + str(index))
