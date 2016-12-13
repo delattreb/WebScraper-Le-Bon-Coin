@@ -5,24 +5,26 @@ Date : 14/08/2016
 """
 
 import logging
+from logging.handlers import RotatingFileHandler
+
 import colorlog
 
 from lib import com_config
-from logging.handlers import RotatingFileHandler
 
 
 class Logger:
-    def __init__(self, name='', file=''):
-        self.config = com_config.getConfig()
+    def __init__(self, name = '', file = ''):
+        conf = com_config.Config()
+        self.config = conf.getconfig()
         self.logger = logging.Logger(name, logging.DEBUG)
         self.logger.name = name
         
         # Formatter
-        formatterfile = logging.Formatter('%(asctime)s %(levelname)s : %(name)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
-        formatterconsole = colorlog.ColoredFormatter('%(asctime)s %(log_color)s%(levelname)s : %(name)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S',
-                                                     log_colors={'DEBUG':    'white', 'INFO': 'green',
-                                                                 'WARNING':  'bold_yellow', 'ERROR': 'bold_red',
-                                                                 'CRITICAL': 'bold_red'})
+        formatterfile = logging.Formatter('%(asctime)s %(levelname)s : %(name)s - %(message)s', datefmt = '%d/%m/%Y %H:%M:%S')
+        formatterconsole = colorlog.ColoredFormatter('%(asctime)s %(log_color)s%(levelname)s : %(name)s - %(message)s', datefmt = '%d/%m/%Y %H:%M:%S',
+                                                     log_colors = {'DEBUG':    'white', 'INFO': 'green',
+                                                                   'WARNING':  'bold_yellow', 'ERROR': 'bold_red',
+                                                                   'CRITICAL': 'bold_red'})
         
         # First logger (file)
         self.logger.setLevel(logging.DEBUG)
