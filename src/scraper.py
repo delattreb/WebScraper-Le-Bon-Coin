@@ -56,7 +56,7 @@ class Scraper:
                         link = li.find("a", class_ = "list_item clearfix trackable")["href"]
                         idx = li.find("a", class_ = "list_item clearfix trackable")["data-info"].strip().split(",", 7)[2].split(":", 2)[1].replace('"', "").strip()
                         # container = source.find('div', attrs={'id':'dlbox'})
-                        imglink=''
+                        imglink = ''
                         try:
                             imglink = li.find("span", class_ = "lazyload")["data-imgsrc"]
                         except Exception as exp:
@@ -84,7 +84,7 @@ class Scraper:
                                     if imglink:
                                         contenuhtml.append("<a href='" + str(link) + "'><img src='http:" + str(imglink) + "'></a>")
                                     contenuhtml.append("\n")
-                index += 1
+                index = index + 1
                 logger.info('Page : ' + str(index))
             
             if len(contenuhtml) > 0:
