@@ -13,7 +13,8 @@ from lib import com_config, com_logger
 
 
 def send_mail_gmail(subject, table, filename = ''):
-    config = com_config.getConfig()
+    conf = com_config.Config()
+    config = conf.getconfig()
     logger = com_logger.Logger('Email')
     logger.info('Sending email')
     msg = MIMEMultipart()
@@ -31,7 +32,7 @@ def send_mail_gmail(subject, table, filename = ''):
         if len(filename) > 0:
             attachment = open("./" + filename, "rb")
             part = MIMEBase('application', 'octet-stream')
-            part.set_payload((attachment).read())
+            part.set_payload(attachment.read())
             encoders.encode_base64(part)
             part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
             msg.attach(part)
@@ -48,5 +49,5 @@ def send_mail_gmail(subject, table, filename = ''):
         server.sendmail(config['EMAIL']['from'], config['EMAIL']['to'], text)
         logger.debug('Mail sent')
         server.quit()
-    except:
+    except Exception as exp:
         logger.critical('Error sending mail')
