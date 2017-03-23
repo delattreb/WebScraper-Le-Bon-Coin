@@ -50,7 +50,13 @@ class Scraper:
                 logger.error('URL: ' + url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end)
                 logger.error(str(exp))
             while urlok == 200:
-                url = urllib.request.urlopen(url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end).read()
+                try:
+                    url = urllib.request.urlopen(url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end).read()
+                except Exception as exp:
+                    logger.error('URL: ' + url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end)
+                    logger.error(str(exp))
+                    break
+
                 soup = BeautifulSoup(url, "html.parser")
                 soup.prettify()
                 
