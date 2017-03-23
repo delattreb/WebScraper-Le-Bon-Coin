@@ -43,7 +43,13 @@ class Scraper:
             
             logger.info('Search: ' + urllib.parse.unquote(tab[0]))
             
-            while requests.get(url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end).status_code == 200:
+            urlok = 0
+            try:
+                urlok = requests.get(url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end).status_code
+            except Exception as exp:
+                logger.error('URL: ' + url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end)
+                logger.error(str(exp))
+            while urlok == 200:
                 url = urllib.request.urlopen(url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end).read()
                 soup = BeautifulSoup(url, "html.parser")
                 soup.prettify()
@@ -60,6 +66,7 @@ class Scraper:
                         try:
                             imglink = li.find("span", class_ = "lazyload")["data-imgsrc"]
                         except Exception as exp:
+                            logger.debug('Rupture: ' + str(exp))
                             pass
                         
                         for item in li.find_all("section", class_ = "item_infos"):
@@ -84,7 +91,7 @@ class Scraper:
                                     if imglink:
                                         contenuhtml.append("<a href='" + str(link) + "'><img src='http:" + str(imglink) + "'></a>")
                                     contenuhtml.append("\n")
-                index = index + 1
+                index += 1
                 logger.info('Page : ' + str(index))
             
             if len(contenuhtml) > 0:

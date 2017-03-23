@@ -241,3 +241,57 @@
 13/12/2016 23:07:19 INFO : Scraper - Page : 12
 13/12/2016 23:07:20 INFO : Scraper - Page : 13
 13/12/2016 23:07:21 INFO : Scraper - Page : 14
+05/01/2017 14:44:34 INFO : Scraper - Start extraction
+05/01/2017 14:44:34 INFO : Scraper - Search: maquette tamiya 1/35
+05/01/2017 14:44:38 INFO : Scraper - Page : 2
+05/01/2017 14:44:44 INFO : Scraper - Page : 3
+05/01/2017 14:44:48 INFO : Scraper - Page : 4
+05/01/2017 14:44:52 INFO : Scraper - Page : 5
+05/01/2017 14:44:56 INFO : Scraper - Page : 6
+05/01/2017 14:44:58 INFO : Scraper - Page : 7
+05/01/2017 14:45:00 INFO : Scraper - Page : 8
+05/01/2017 14:45:02 INFO : Email - Sending email
+23/03/2017 10:13:10 INFO : Scraper - Start extraction
+23/03/2017 10:13:10 INFO : Scraper - Search: maquette tamiya 1/35
+23/03/2017 10:13:11 INFO : Scraper - Page : 2
+23/03/2017 10:13:12 INFO : Scraper - Page : 3
+23/03/2017 10:13:13 INFO : Scraper - Page : 4
+23/03/2017 10:13:15 INFO : Scraper - Page : 5
+23/03/2017 10:13:15 INFO : Scraper - Page : 6
+23/03/2017 10:13:16 INFO : Scraper - Page : 7
+23/03/2017 10:13:16 INFO : Scraper - Page : 8
+23/03/2017 10:13:17 INFO : Email - Sending email
+23/03/2017 10:13:59 CRITICAL : Email - Error sending mail
+23/03/2017 10:13:59 INFO : Scraper - Mail sent
+23/03/2017 10:13:59 INFO : Scraper - Search: raspberry
+23/03/2017 10:14:01 INFO : Scraper - Page : 2
+23/03/2017 10:14:02 INFO : Scraper - Page : 3
+23/03/2017 10:14:02 INFO : Scraper - Page : 4
+23/03/2017 10:14:03 INFO : Scraper - Page : 5
+23/03/2017 10:14:03 INFO : Scraper - Page : 6
+23/03/2017 10:14:04 INFO : Scraper - Page : 7
+23/03/2017 10:14:05 INFO : Scraper - Page : 8
+23/03/2017 10:14:05 INFO : Scraper - Page : 9
+23/03/2017 10:14:06 INFO : Scraper - Page : 10
+23/03/2017 10:14:08 INFO : Scraper - Page : 11
+23/03/2017 10:14:09 INFO : Scraper - Page : 12
+23/03/2017 10:14:09 INFO : Scraper - Page : 13
+23/03/2017 10:14:10 INFO : Scraper - Page : 14
+23/03/2017 10:14:11 INFO : Scraper - Page : 15
+23/03/2017 10:14:11 INFO : Scraper - Page : 16
+23/03/2017 10:14:12 INFO : Email - Sending email
+23/03/2017 10:14:54 CRITICAL : Email - Error sending mail
+23/03/2017 10:14:54 INFO : Scraper - Mail sent
+23/03/2017 10:14:54 INFO : Scraper - Search: vieille radio
+23/03/2017 10:14:55 INFO : Scraper - Page : 2
+23/03/2017 10:14:56 INFO : Scraper - Page : 3
+23/03/2017 10:14:56 INFO : Scraper - Page : 4
+23/03/2017 10:14:57 INFO : Scraper - Page : 5
+23/03/2017 10:14:57 INFO : Scraper - Page : 6
+23/03/2017 10:14:58 INFO : Scraper - Page : 7
+23/03/2017 10:14:58 INFO : Scraper - Page : 8
+23/03/2017 10:14:59 INFO : Scraper - Page : 9
+23/03/2017 10:15:00 INFO : Scraper - Page : 10
+23/03/2017 10:15:00 INFO : Scraper - Page : 11
+23/03/2017 10:15:01 INFO : Scraper - Page : 12
+23/03/2017 10:15:01 INFO : Email - Sending email
