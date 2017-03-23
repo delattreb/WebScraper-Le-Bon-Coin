@@ -86,7 +86,7 @@ class Scraper:
                                 prix = 0
                             
                             if (prix >= prix_min) and (prix <= prix_max):
-                                if com_sqlite.select(idx) == 0:
+                                if com_sqlite.select(idx) == 0:  # Item not yet present in database
                                     logger.debug('Find: ' + titre)
                                     com_sqlite.insert(idx)
                                     contenuhtml = Scraper.mailcontent(contenuhtml, imglink, item, link, prix, titre)
