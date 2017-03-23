@@ -18,18 +18,19 @@ class Scraper:
         logger = com_logger.Logger('Scraper')
         url_start = "https://www.leboncoin.fr/annonces/offres/haute_normandie/occasions/?o="
         url_search = "&q="
-        url_end = ""  # sinon recherche uniquement dans le titre  "&it=1"
+        url_end = "&it=1"  # vide sinon recherche uniquement dans le titre "&it=1"
         search_list = []
         
         # Get Things to search from config file
         conf = com_config.Config()
         config = conf.getconfig()
         for i in range(1, 50):
-            strThings = 'things' + str(i)
+            strthings = 'things' + str(i)
             try:
-                if len(config['SEARCH'][strThings]) != 0:
-                    search_list.append(config['SEARCH'][strThings])
-            except:
+                if len(config['SEARCH'][strthings]) != 0:
+                    search_list.append(config['SEARCH'][strthings])
+            except Exception as exp:
+                logger.error('File config error' + str(exp))
                 break
         
         logger.info('Start extraction')
@@ -56,7 +57,7 @@ class Scraper:
                     logger.error('URL: ' + url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end)
                     logger.error(str(exp))
                     break
-
+                
                 soup = BeautifulSoup(url, "html.parser")
                 soup.prettify()
                 
@@ -72,7 +73,7 @@ class Scraper:
                         try:
                             imglink = li.find("span", class_ = "lazyload")["data-imgsrc"]
                         except Exception as exp:
-                            logger.debug('Rupture: ' + str(exp))
+                            logger.debug('No image: ' + str(exp))
                             pass
                         
                         for item in li.find_all("section", class_ = "item_infos"):
@@ -86,17 +87,9 @@ class Scraper:
                             
                             if (prix >= prix_min) and (prix <= prix_max):
                                 if com_sqlite.select(idx) == 0:
-                                    
                                     logger.debug('Find: ' + titre)
-                                    
                                     com_sqlite.insert(idx)
-                                    contenuhtml.append("<H2>" + str(titre) + "</H2>")
-                                    for subitem in item.find_all("p", class_ = "item_supp"):
-                                        contenuhtml.append(subitem.text.strip().replace("\n", "").replace(" ", ""))
-                                    contenuhtml.append("<STRONG>" + str(prix) + " euro</STRONG>")
-                                    if imglink:
-                                        contenuhtml.append("<a href='" + str(link) + "'><img src='http:" + str(imglink) + "'></a>")
-                                    contenuhtml.append("\n")
+                                    contenuhtml = Scraper.mailcontent(contenuhtml, imglink, item, link, prix, titre)
                 index += 1
                 logger.info('Page : ' + str(index))
             
@@ -104,3 +97,14 @@ class Scraper:
                 com_email.send_mail_gmail("LeBonCoin: " + urllib.parse.unquote(tab[0]) + "  Prix: " + str(prix_min) + "-" + str(prix_max), contenuhtml)
                 logger.info('Mail sent')
         logger.info('End extraction')
+    
+    @staticmethod
+    def mailcontent(contenuhtml, imglink, item, link, prix, titre):
+        contenuhtml.append("<H2>" + str(titre) + "</H2>")
+        for subitem in item.find_all("p", class_ = "item_supp"):
+            contenuhtml.append(subitem.text.strip().replace("\n", "").replace(" ", ""))
+        contenuhtml.append("<STRONG>" + str(prix) + " euro</STRONG>")
+        if imglink:
+            contenuhtml.append("<a href='" + str(link) + "'><img src='http:" + str(imglink) + "'></a>")
+        contenuhtml.append("\n")
+        return contenuhtml
