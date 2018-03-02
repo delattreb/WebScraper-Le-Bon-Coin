@@ -105,6 +105,6 @@ class Scraper:
             contenuhtml.append(subitem.text.strip().replace("\n", "").replace(" ", ""))
         contenuhtml.append("<STRONG>" + str(prix) + " euro</STRONG>")
         if imglink:
-            contenuhtml.append("<a href='" + str(link) + "'><img src='http:" + str(imglink) + "'></a>")
+            contenuhtml.append("<a href='" + str(link) + "'><img src='" + str(imglink) + "'></a>")
         contenuhtml.append("\n")
         return contenuhtml

@@ -88,5 +88,6 @@ ENV/
 .ropeproject
 /src/log
 .idea/workspace.xml
+.idea/*
 /pythonenv/
 pythonenv/

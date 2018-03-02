@@ -434,3 +434,90 @@
 23/03/2017 11:53:06 INFO : Scraper - Page : 2
 23/03/2017 11:53:07 INFO : Scraper - Page : 3
 23/03/2017 11:53:08 INFO : Scraper - Search: cerf volant
+02/03/2018 11:15:21 ERROR : Scraper - File config error'things5'
+02/03/2018 11:15:21 INFO : Scraper - Start extraction
+02/03/2018 11:15:21 INFO : Scraper - Search: maquette tamiya 1/35
+02/03/2018 11:15:23 INFO : Scraper - Page : 2
+02/03/2018 11:15:24 INFO : Scraper - Page : 3
+02/03/2018 11:15:25 INFO : Email - Sending email
+02/03/2018 11:15:28 INFO : Scraper - Mail sent
+02/03/2018 11:15:28 INFO : Scraper - Search: raspberry
+02/03/2018 11:15:30 INFO : Scraper - Page : 2
+02/03/2018 11:15:32 INFO : Scraper - Page : 3
+02/03/2018 11:15:33 INFO : Scraper - Page : 4
+02/03/2018 11:15:35 INFO : Scraper - Page : 5
+02/03/2018 11:15:36 INFO : Email - Sending email
+02/03/2018 11:15:38 INFO : Scraper - Mail sent
+02/03/2018 11:15:38 INFO : Scraper - Search: vieille radio
+02/03/2018 11:15:40 INFO : Scraper - Page : 2
+02/03/2018 11:15:42 INFO : Scraper - Page : 3
+02/03/2018 11:15:43 INFO : Email - Sending email
+02/03/2018 11:15:45 INFO : Scraper - Mail sent
+02/03/2018 11:15:45 INFO : Scraper - Search: cerf volant
+02/03/2018 11:15:47 INFO : Scraper - Page : 2
+02/03/2018 11:15:49 INFO : Scraper - Page : 3
+02/03/2018 11:15:51 INFO : Scraper - Page : 4
+02/03/2018 11:15:53 INFO : Scraper - Page : 5
+02/03/2018 11:15:54 INFO : Scraper - Page : 6
+02/03/2018 11:15:56 INFO : Scraper - Page : 7
+02/03/2018 11:15:58 INFO : Scraper - Page : 8
+02/03/2018 11:16:00 INFO : Scraper - Page : 9
+02/03/2018 11:16:02 INFO : Scraper - Page : 10
+02/03/2018 11:16:04 INFO : Scraper - Page : 11
+02/03/2018 11:16:05 INFO : Scraper - Page : 12
+02/03/2018 11:16:07 INFO : Scraper - Page : 13
+02/03/2018 11:16:09 INFO : Scraper - Page : 14
+02/03/2018 11:16:11 INFO : Scraper - Page : 15
+02/03/2018 11:16:12 INFO : Scraper - Page : 16
+02/03/2018 11:16:14 INFO : Email - Sending email
+02/03/2018 11:16:16 INFO : Scraper - Mail sent
+02/03/2018 11:16:16 INFO : Scraper - End extraction
+02/03/2018 11:25:27 ERROR : Scraper - File config error'things5'
+02/03/2018 11:25:27 INFO : Scraper - Start extraction
+02/03/2018 11:25:27 INFO : Scraper - Search: maquette tamiya 1/35
+02/03/2018 11:27:11 ERROR : Scraper - File config error'things5'
+02/03/2018 11:27:11 INFO : Scraper - Start extraction
+02/03/2018 11:27:21 INFO : Scraper - Search: maquette tamiya 1/35
+02/03/2018 11:38:16 INFO : Scraper - Page : 2
+02/03/2018 11:38:49 INFO : Scraper - Page : 3
+02/03/2018 11:42:15 ERROR : Scraper - File config error'things5'
+02/03/2018 11:42:15 INFO : Scraper - Start extraction
+02/03/2018 11:42:18 INFO : Scraper - Search: maquette tamiya 1/35
+02/03/2018 11:44:10 ERROR : Scraper - File config error'things5'
+02/03/2018 11:44:10 INFO : Scraper - Start extraction
+02/03/2018 11:44:10 INFO : Scraper - Search: maquette tamiya 1/35
+02/03/2018 11:44:49 INFO : Scraper - Page : 2
+02/03/2018 11:44:52 INFO : Scraper - Page : 3
+02/03/2018 11:44:55 INFO : Email - Sending email
+02/03/2018 11:44:57 INFO : Scraper - Mail sent
+02/03/2018 11:44:57 INFO : Scraper - Search: raspberry
+02/03/2018 11:45:01 INFO : Scraper - Page : 2
+02/03/2018 11:45:06 INFO : Scraper - Page : 3
+02/03/2018 11:45:09 INFO : Scraper - Page : 4
+02/03/2018 11:45:12 INFO : Scraper - Page : 5
+02/03/2018 11:45:14 INFO : Email - Sending email
+02/03/2018 11:45:16 INFO : Scraper - Mail sent
+02/03/2018 11:45:16 INFO : Scraper - Search: vieille radio
+02/03/2018 11:45:20 INFO : Scraper - Page : 2
+02/03/2018 11:45:24 INFO : Scraper - Page : 3
+02/03/2018 11:45:26 INFO : Email - Sending email
+02/03/2018 11:45:28 INFO : Scraper - Mail sent
+02/03/2018 11:45:28 INFO : Scraper - Search: cerf volant
+02/03/2018 11:45:31 INFO : Scraper - Page : 2
+02/03/2018 11:45:35 INFO : Scraper - Page : 3
+02/03/2018 11:45:39 INFO : Scraper - Page : 4
+02/03/2018 11:45:44 INFO : Scraper - Page : 5
+02/03/2018 11:45:48 INFO : Scraper - Page : 6
+02/03/2018 11:45:51 INFO : Scraper - Page : 7
+02/03/2018 11:45:55 INFO : Scraper - Page : 8
+02/03/2018 11:45:59 INFO : Scraper - Page : 9
+02/03/2018 11:46:02 INFO : Scraper - Page : 10
+02/03/2018 11:46:06 INFO : Scraper - Page : 11
+02/03/2018 11:46:09 INFO : Scraper - Page : 12
+02/03/2018 11:46:13 INFO : Scraper - Page : 13
+02/03/2018 11:46:17 INFO : Scraper - Page : 14
+02/03/2018 11:46:21 INFO : Scraper - Page : 15
+02/03/2018 11:46:25 INFO : Scraper - Page : 16
+02/03/2018 11:46:27 INFO : Email - Sending email
+02/03/2018 11:46:29 INFO : Scraper - Mail sent
+02/03/2018 11:46:29 INFO : Scraper - End extraction
