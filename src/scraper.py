@@ -16,7 +16,9 @@ class Scraper:
     @staticmethod
     def scrap():
         logger = com_logger.Logger('Scraper')
-        url_start = "https://www.leboncoin.fr/annonces/offres/haute_normandie/occasions/?o="
+        url_start = "https://www.leboncoin.fr/annonces/offres/haute_normandie/?o="
+        #https://www.leboncoin.fr/annonces/offres/?th=1
+        #https: // www.leboncoin.fr/annonces/offres/haute_normandie/?th = 1 & q = vtt
         url_search = "&q="
         url_end = "&it=1"  # vide sinon recherche uniquement dans le titre "&it=1"
         search_list = []
@@ -78,6 +80,9 @@ class Scraper:
                         
                         for item in li.find_all("section", class_ = "item_infos"):
                             titre = urllib.parse.unquote(item.find("h2", class_ = "item_title").text.strip().replace("\n", "").replace("\t", ""))
+                            category = urllib.parse.unquote(item.find("p", itemprop = "category").text.strip().replace("\n", "").replace("\t", ""))
+                            localisation = urllib.parse.unquote(item.find("p", itemprop = "availableAtOrFrom").text.strip().replace("\n", "").replace("\t", ""))
+
                             try:
                                 prix = int(item.find("h3", class_ = "item_price").text.encode("ASCII", 'ignore').strip())
                             except AttributeError:
@@ -89,7 +94,7 @@ class Scraper:
                                 if com_sqlite.select(idx) == 0:  # Item not yet present in database
                                     logger.debug('Find: ' + titre)
                                     com_sqlite.insert(idx)
-                                    contenuhtml = Scraper.mailcontent(contenuhtml, imglink, item, link, prix, titre)
+                                    contenuhtml = Scraper.mailcontent(contenuhtml, imglink, item, link, prix, titre, category, localisation)
                 index += 1
                 logger.info('Page : ' + str(index))
             
@@ -99,7 +104,7 @@ class Scraper:
         logger.info('End extraction')
     
     @staticmethod
-    def mailcontent(contenuhtml, imglink, item, link, prix, titre):
+    def mailcontent(contenuhtml, imglink, item, link, prix, titre, category, localisation):
         contenuhtml.append("<H2>" + str(titre) + "</H2>")
         for subitem in item.find_all("p", class_ = "item_supp"):
             contenuhtml.append(subitem.text.strip().replace("\n", "").replace(" ", ""))
