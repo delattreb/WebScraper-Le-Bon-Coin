@@ -7,7 +7,7 @@ import scraper
 from lib import com_config
 
 conf = com_config.Config()
-conf.setconfig()
+#conf.setconfig()
 
 scrap = scraper.Scraper()
 scrap.scrap()

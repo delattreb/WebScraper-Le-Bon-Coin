@@ -1269,3 +1269,39 @@
 10/03/2018 20:40:19 INFO : Email - Sending email
 10/03/2018 20:40:23 INFO : Scraper - Mail sent
 10/03/2018 20:40:23 INFO : Scraper - End extraction
+11/03/2018 08:52:15 ERROR : Scraper - File config error'things2'
+11/03/2018 08:52:15 INFO : Scraper - Start extraction
+11/03/2018 08:52:15 INFO : Scraper - Search: vtt
+11/03/2018 08:52:17 INFO : Scraper - Page : 2
+11/03/2018 08:52:20 INFO : Scraper - Page : 3
+11/03/2018 09:15:22 ERROR : Scraper - File config error'things2'
+11/03/2018 09:15:22 INFO : Scraper - Start extraction
+11/03/2018 09:15:22 INFO : Scraper - Search: vtt
+11/03/2018 09:15:25 INFO : Scraper - Page : 2
+11/03/2018 09:15:27 INFO : Scraper - Page : 3
+11/03/2018 09:15:29 INFO : Scraper - Page : 4
+11/03/2018 09:15:31 INFO : Scraper - Page : 5
+11/03/2018 09:15:33 INFO : Scraper - Page : 6
+11/03/2018 09:15:36 INFO : Scraper - Page : 7
+11/03/2018 09:15:38 INFO : Scraper - Page : 8
+11/03/2018 09:15:40 INFO : Scraper - Page : 9
+11/03/2018 09:15:42 INFO : Scraper - Page : 10
+11/03/2018 09:15:44 INFO : Scraper - Page : 11
+11/03/2018 09:15:47 INFO : Scraper - Page : 12
+11/03/2018 09:15:49 INFO : Scraper - Page : 13
+11/03/2018 09:15:51 INFO : Scraper - Page : 14
+11/03/2018 09:15:53 INFO : Scraper - Page : 15
+11/03/2018 09:15:55 INFO : Scraper - Page : 16
+11/03/2018 09:15:58 INFO : Scraper - Page : 17
+11/03/2018 09:16:00 INFO : Scraper - Page : 18
+11/03/2018 09:16:02 INFO : Scraper - Page : 19
+11/03/2018 09:16:04 INFO : Scraper - Page : 20
+11/03/2018 09:16:06 INFO : Scraper - Page : 21
+11/03/2018 09:16:08 INFO : Scraper - Page : 22
+11/03/2018 09:16:11 INFO : Scraper - Page : 23
+11/03/2018 09:16:13 INFO : Scraper - Page : 24
+11/03/2018 09:16:15 INFO : Scraper - Page : 25
+11/03/2018 09:16:17 INFO : Scraper - Page : 26
+11/03/2018 09:16:19 INFO : Scraper - Page : 27
+11/03/2018 09:16:21 INFO : Scraper - Page : 28
+11/03/2018 09:16:22 INFO : Scraper - End extraction
