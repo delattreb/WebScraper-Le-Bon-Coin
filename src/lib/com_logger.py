@@ -29,7 +29,7 @@ class Logger:
         
         # First logger (file)
         self.logger.setLevel(logging.DEBUG)
-        file_handler = RotatingFileHandler(self.config['LOGGER']['logfile'], 'a', int(self.config['LOGGER']['logfilesize']), 1)
+        file_handler = RotatingFileHandler(self.config['LOGGER']['logfile'], 'a', int(self.config['LOGGER']['logfilesize']), int(self.config['LOGGER']['lognumber']))
         file_handler.setLevel(int(self.config['LOGGER']['levelfile']))
         file_handler.setFormatter(formatterfile)
         self.logger.addHandler(file_handler)

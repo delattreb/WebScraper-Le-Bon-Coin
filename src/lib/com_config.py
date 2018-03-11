@@ -26,7 +26,8 @@ class Config:
         self.config['LOGGER']['levelfile'] = '20'
         self.config['LOGGER']['logfile'] = 'log'
         self.config['LOGGER']['logfilesize'] = '1000000'
-        
+        self.config['LOGGER']['lognumber'] = '2'
+
         # SQLite
         self.config['SQLITE'] = {}
         self.config['SQLITE']['database'] = 'database.db'
