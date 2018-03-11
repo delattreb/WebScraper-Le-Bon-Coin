@@ -108,12 +108,8 @@ class Scraper:
                 logger.debug('Page : ' + str(index))
 
             if len(contenuhtml) > 0:
-                contenu = Scraper.mailfull(
-                    "LeBonCoin: " + urllib.parse.unquote(tab[0]) + "  Prix: " + str(prix_min) + "-" + str(
-                        prix_max) + ' €', contenuhtml)
-                com_email.send_mail_gmail(
-                    "LeBonCoin: " + urllib.parse.unquote(tab[0]) + "  Prix: " + str(prix_min) + "-" + str(
-                        prix_max) + ' €', contenu)
+                contenu = Scraper.mailfull(urllib.parse.unquote(tab[0] + " Prix: " + str(prix_min) + "-" + str(prix_max) + ' €'), contenuhtml)
+                com_email.send_mail_gmail(urllib.parse.unquote(tab[0]), contenu)
                 logger.info('Mail sent')
         logger.info('End extraction')
 

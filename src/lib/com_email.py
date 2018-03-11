@@ -49,4 +49,4 @@ def send_mail_gmail(subject, table, filename = ''):
         logger.debug('Mail sent')
         server.quit()
     except Exception as exp:
-        logger.critical('Error sending mail')
+        logger.critical('Error sending mail' + str(exp))
