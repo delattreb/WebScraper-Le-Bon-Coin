@@ -19,10 +19,9 @@ def send_mail_gmail(subject, table, filename = ''):
     logger.info('Sending email')
     msg = MIMEMultipart()
     
-    body = ''
-    for line in table:
-        body += line + "<br>"
-    
+    body = "".join(str(l) for l in table)
+    body = body.replace("', '","").replace("['","").replace("']","").replace("', \"","").replace("\" ,'","")
+
     msg['From'] = config['EMAIL']['from']
     msg['To'] = config['EMAIL']['to']
     msg['Subject'] = subject
