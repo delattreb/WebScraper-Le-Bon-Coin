@@ -33,10 +33,11 @@ class Config:
         
         # Search
         self.config['SEARCH'] = {}
+        self.config['SEARCH']['max_browse'] = '10'
         self.config['SEARCH']['things1'] = 'vtt,150,300'
-        #self.config['SEARCH']['things2'] = 'raspberry,10,30'
-        #self.config['SEARCH']['things3'] = 'vieille radio,5,40'
-        #self.config['SEARCH']['things4'] = 'cerf volant,40,250'
+        self.config['SEARCH']['things2'] = 'raspberry,10,30'
+        self.config['SEARCH']['things3'] = 'vieille radio,5,40'
+        self.config['SEARCH']['things4'] = 'cerf volant,40,250'
         
         basedir = os.path.dirname(os.path.abspath(__file__))
         db_path = os.path.join(basedir, config_file)

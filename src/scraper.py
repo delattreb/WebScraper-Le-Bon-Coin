@@ -35,6 +35,7 @@ class Scraper:
                 #logger.error('File config error' + str(exp))
                 break
 
+        max_browse = int(config['SEARCH']['max_browse'])
         logger.info('Start extraction')
 
         for search_item in search_list:
@@ -53,7 +54,7 @@ class Scraper:
             except Exception as exp:
                 logger.error('URL: ' + url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end)
                 logger.error(str(exp))
-            while urlok == 200:
+            while urlok == 200 and index <= max_browse:
                 try:
                     url = urllib.request.urlopen(url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end).read()
                 except Exception as exp:
