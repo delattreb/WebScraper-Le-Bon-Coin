@@ -110,8 +110,8 @@ class Scraper:
         contenuhtml.append('<tr><td colspan="3"><h2 style="color:#0E7693; font-size:22px; padding-top:12px;">' + str(titre) +' - '+str(prix)+' €'+'</h2></td></tr>')
         contenuhtml.append('<tr><td class="w275" width="275" valign="top"><div align="left" class="article-content"><p></p>')
         contenuhtml.append('<ul>')
-        contenuhtml.append('<li>Categorie: ' + str(category) + '</li>')
-        contenuhtml.append('<li>Localisation: ' + str(localisation) + '</li>')
+        contenuhtml.append('<li>' + str(category) + '</li>')
+        contenuhtml.append('<li>' + str(localisation) + '</li>')
         contenuhtml.append('</ul></div></td><td class="w30" width="30" class="w30"></td><td class="w275" width="275" valign="top"><div align="left" class="article-content"><p>')
         if imglink:
             contenuhtml.append("<a href='" + str(link) + "'><img src='" + str(imglink) + "'></a>")

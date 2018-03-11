@@ -1989,3 +1989,105 @@
 11/03/2018 12:37:11 INFO : Scraper - Page : 13
 11/03/2018 12:37:14 INFO : Scraper - Page : 14
 11/03/2018 12:37:16 INFO : Scraper - Page : 15
+11/03/2018 12:37:19 INFO : Scraper - Page : 16
+11/03/2018 12:37:22 INFO : Scraper - Page : 17
+11/03/2018 12:37:24 INFO : Scraper - Page : 18
+11/03/2018 12:37:27 INFO : Scraper - Page : 19
+11/03/2018 12:37:30 INFO : Scraper - Page : 20
+11/03/2018 12:37:32 INFO : Scraper - Page : 21
+11/03/2018 12:37:34 INFO : Scraper - Page : 22
+11/03/2018 12:37:37 INFO : Scraper - Page : 23
+11/03/2018 12:37:39 INFO : Scraper - Page : 24
+11/03/2018 12:37:42 INFO : Scraper - Page : 25
+11/03/2018 12:37:45 INFO : Scraper - Page : 26
+11/03/2018 12:37:47 INFO : Scraper - Page : 27
+11/03/2018 12:37:49 INFO : Scraper - Page : 28
+11/03/2018 12:37:51 INFO : Email - Sending email
+11/03/2018 12:37:55 INFO : Scraper - Mail sent
+11/03/2018 12:37:55 INFO : Scraper - End extraction
+11/03/2018 12:39:05 ERROR : Scraper - File config error'things2'
+11/03/2018 12:39:05 INFO : Scraper - Start extraction
+11/03/2018 12:39:05 INFO : Scraper - Search: vtt
+11/03/2018 12:39:09 INFO : Scraper - Page : 2
+11/03/2018 12:39:13 INFO : Scraper - Page : 3
+11/03/2018 12:39:18 INFO : Scraper - Page : 4
+11/03/2018 12:39:22 INFO : Scraper - Page : 5
+11/03/2018 12:39:26 INFO : Scraper - Page : 6
+11/03/2018 12:39:30 INFO : Scraper - Page : 7
+11/03/2018 12:39:34 INFO : Scraper - Page : 8
+11/03/2018 12:39:38 INFO : Scraper - Page : 9
+11/03/2018 12:39:42 INFO : Scraper - Page : 10
+11/03/2018 12:39:47 INFO : Scraper - Page : 11
+11/03/2018 12:39:51 INFO : Scraper - Page : 12
+11/03/2018 12:39:55 INFO : Scraper - Page : 13
+11/03/2018 12:39:59 INFO : Scraper - Page : 14
+11/03/2018 12:40:03 INFO : Scraper - Page : 15
+11/03/2018 12:40:07 INFO : Scraper - Page : 16
+11/03/2018 12:40:11 INFO : Scraper - Page : 17
+11/03/2018 12:40:16 INFO : Scraper - Page : 18
+11/03/2018 12:40:20 INFO : Scraper - Page : 19
+11/03/2018 12:40:24 INFO : Scraper - Page : 20
+11/03/2018 12:40:28 INFO : Scraper - Page : 21
+11/03/2018 12:40:40 ERROR : Scraper - File config error'things2'
+11/03/2018 12:40:40 INFO : Scraper - Start extraction
+11/03/2018 12:40:40 INFO : Scraper - Search: vtt
+11/03/2018 12:40:46 INFO : Scraper - Page : 2
+11/03/2018 12:40:49 INFO : Scraper - Page : 3
+11/03/2018 12:40:53 INFO : Scraper - Page : 4
+11/03/2018 12:40:57 INFO : Scraper - Page : 5
+11/03/2018 12:41:00 INFO : Scraper - Page : 6
+11/03/2018 12:41:03 INFO : Scraper - Page : 7
+11/03/2018 12:41:06 INFO : Scraper - Page : 8
+11/03/2018 12:41:08 INFO : Scraper - Page : 9
+11/03/2018 12:41:10 INFO : Scraper - Page : 10
+11/03/2018 12:41:13 INFO : Scraper - Page : 11
+11/03/2018 12:41:16 INFO : Scraper - Page : 12
+11/03/2018 12:41:18 INFO : Scraper - Page : 13
+11/03/2018 12:41:20 INFO : Scraper - Page : 14
+11/03/2018 12:41:23 INFO : Scraper - Page : 15
+11/03/2018 12:41:25 INFO : Scraper - Page : 16
+11/03/2018 12:41:28 INFO : Scraper - Page : 17
+11/03/2018 12:41:31 INFO : Scraper - Page : 18
+11/03/2018 12:41:33 INFO : Scraper - Page : 19
+11/03/2018 12:41:36 INFO : Scraper - Page : 20
+11/03/2018 12:41:38 INFO : Scraper - Page : 21
+11/03/2018 12:41:41 INFO : Scraper - Page : 22
+11/03/2018 12:41:43 INFO : Scraper - Page : 23
+11/03/2018 12:41:46 INFO : Scraper - Page : 24
+11/03/2018 12:41:49 INFO : Scraper - Page : 25
+11/03/2018 12:41:51 INFO : Scraper - Page : 26
+11/03/2018 12:41:53 INFO : Scraper - Page : 27
+11/03/2018 12:41:55 INFO : Scraper - Page : 28
+11/03/2018 12:41:57 INFO : Email - Sending email
+11/03/2018 12:42:01 INFO : Scraper - Mail sent
+11/03/2018 12:42:01 INFO : Scraper - End extraction
+11/03/2018 12:42:03 ERROR : Scraper - File config error'things4'
+11/03/2018 12:42:03 INFO : Scraper - Start extraction
+11/03/2018 12:42:03 INFO : Scraper - Search: VTT
+11/03/2018 12:42:06 INFO : Scraper - Page : 2
+11/03/2018 12:42:09 INFO : Scraper - Page : 3
+11/03/2018 12:42:11 INFO : Scraper - Page : 4
+11/03/2018 12:42:14 INFO : Scraper - Page : 5
+11/03/2018 12:42:16 INFO : Scraper - Page : 6
+11/03/2018 12:42:18 INFO : Scraper - Page : 7
+11/03/2018 12:42:21 INFO : Scraper - Page : 8
+11/03/2018 12:42:23 INFO : Scraper - Page : 9
+11/03/2018 12:42:26 INFO : Scraper - Page : 10
+11/03/2018 12:42:28 INFO : Scraper - Page : 11
+11/03/2018 12:42:30 INFO : Scraper - Page : 12
+11/03/2018 12:42:33 INFO : Scraper - Page : 13
+11/03/2018 12:42:35 INFO : Scraper - Page : 14
+11/03/2018 12:42:38 INFO : Scraper - Page : 15
+11/03/2018 12:42:40 INFO : Scraper - Page : 16
+11/03/2018 12:42:43 INFO : Scraper - Page : 17
+11/03/2018 12:42:45 INFO : Scraper - Page : 18
+11/03/2018 12:42:48 INFO : Scraper - Page : 19
+11/03/2018 12:42:50 INFO : Scraper - Page : 20
+11/03/2018 12:42:53 INFO : Scraper - Page : 21
+11/03/2018 12:42:55 INFO : Scraper - Page : 22
+11/03/2018 12:42:58 INFO : Scraper - Page : 23
+11/03/2018 12:43:00 INFO : Scraper - Page : 24
+11/03/2018 12:43:03 INFO : Scraper - Page : 25
+11/03/2018 12:43:06 INFO : Scraper - Page : 26
+11/03/2018 12:43:12 INFO : Scraper - Page : 27
+11/03/2018 12:43:14 INFO : Scraper - Page : 28

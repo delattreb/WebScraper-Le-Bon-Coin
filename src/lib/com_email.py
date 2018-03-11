@@ -20,7 +20,7 @@ def send_mail_gmail(subject, table, filename = ''):
     msg = MIMEMultipart()
     
     body = "".join(str(l) for l in table)
-    body = body.replace("', '","").replace("['","").replace("']","").replace("', \"","").replace("\" ,'","")
+    body = body.replace("', '","").replace("['","").replace("']","").replace("', \"","").replace("\", '","")
 
     msg['From'] = config['EMAIL']['from']
     msg['To'] = config['EMAIL']['to']
