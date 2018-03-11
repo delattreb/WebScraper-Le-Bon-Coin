@@ -32,7 +32,7 @@ class Scraper:
                 if len(config['SEARCH'][strthings]) != 0:
                     search_list.append(config['SEARCH'][strthings])
             except Exception as exp:
-                logger.error('File config error' + str(exp))
+                #logger.error('File config error' + str(exp))
                 break
 
         logger.info('Start extraction')
@@ -93,11 +93,11 @@ class Scraper:
 
                             if (prix >= prix_min) and (prix <= prix_max):
                                 if com_sqlite.select(idx) == 0:  # Item not yet present in database
-                                    logger.debug('Find: ' + titre)
+                                    logger.info('Find: ' + titre.strip())
                                     com_sqlite.insert(idx)
                                     contenuhtml = Scraper.mailContent(contenuhtml, imglink, link, prix, titre, category, localisation)
                 index += 1
-                logger.info('Page : ' + str(index))
+                logger.debug('Page : ' + str(index))
 
             if len(contenuhtml) > 0:
                 contenu = Scraper.mailFull("LeBonCoin: " + urllib.parse.unquote(tab[0]) + "  Prix: " + str(prix_min) + "-" + str(prix_max)+' €', contenuhtml)
