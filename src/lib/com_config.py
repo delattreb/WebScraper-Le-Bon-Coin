@@ -32,14 +32,21 @@ class Config:
         self.config['SQLITE'] = {}
         self.config['SQLITE']['database'] = 'database.db'
         
-        # Search
-        self.config['SEARCH'] = {}
-        self.config['SEARCH']['max_browse'] = '10'
-        self.config['SEARCH']['things1'] = 'vtt,150,300'
-        self.config['SEARCH']['things2'] = 'raspberry,10,30'
-        self.config['SEARCH']['things3'] = 'vieille radio,5,40'
-        self.config['SEARCH']['things4'] = 'cerf volant,40,250'
-        
+        # Search Le Bon Coin
+        self.config['SEARCHLBC'] = {}
+        self.config['SEARCHLBC']['max_browse'] = '10'
+        self.config['SEARCHLBC']['things1'] = 'vtt,150,300'
+        self.config['SEARCHLBC']['things2'] = 'raspberry,10,30'
+        self.config['SEARCHLBC']['things3'] = 'vieille radio,5,40'
+        self.config['SEARCHLBC']['things4'] = 'cerf volant,40,250'
+
+        # Search Okkazeo
+        self.config['SEARCHOKKAZEO'] = {}
+        self.config['SEARCHOKKAZEO']['max_browse'] = '10'
+        self.config['SEARCHOKKAZEO']['things1'] = 'Yokohama,10,100'
+        self.config['SEARCHOKKAZEO']['things2'] = 'fortune,10,30'
+
+
         basedir = os.path.dirname(os.path.abspath(__file__))
         db_path = os.path.join(basedir, config_file)
         with open(db_path, 'w') as configfile:

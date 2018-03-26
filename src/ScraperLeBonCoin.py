@@ -29,13 +29,13 @@ class Scraper:
         for i in range(1, 50):
             strthings = 'things' + str(i)
             try:
-                if len(config['SEARCH'][strthings]) != 0:
-                    search_list.append(config['SEARCH'][strthings])
+                if len(config['SEARCHLBC'][strthings]) != 0:
+                    search_list.append(config['SEARCHLBC'][strthings])
             except Exception as exp:
                 logger.info('Things stop at:' + str(exp))
                 break
 
-        max_browse = int(config['SEARCH']['max_browse'])
+        max_browse = int(config['SEARCHLBC']['max_browse'])
         logger.info('Start extraction')
 
         for search_item in search_list:
@@ -49,15 +49,13 @@ class Scraper:
 
             urlok = 0
             try:
-                urlok = requests.get(
-                    url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end).status_code
+                urlok = requests.get(url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end).status_code
             except Exception as exp:
                 logger.error('URL: ' + url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end)
                 logger.error(str(exp))
             while urlok == 200 and index <= max_browse:
                 try:
-                    url = urllib.request.urlopen(
-                        url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end).read()
+                    url = urllib.request.urlopen(url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end).read()
                 except Exception as exp:
                     logger.error('URL: ' + url_start + str(index) + url_search + urllib.parse.quote(tab[0]) + url_end)
                     logger.error(str(exp))

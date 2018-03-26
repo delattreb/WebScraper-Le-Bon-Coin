@@ -3,11 +3,14 @@ Auteur: Bruno DELATTRE
 Date : 01/09/2016
 """
 
-import scraper
+import ScraperLeBonCoin, ScraperOkkazeo
 from lib import com_config
 
 conf = com_config.Config()
-# conf.setconfig()
+conf.setconfig()
 
-scrap = scraper.Scraper()
-scrap.scrap()
+#scraplbc = ScraperLeBonCoin.Scraper()
+#scraplbc.scrap()
+
+scrapokkazeo = ScraperOkkazeo.Scraper()
+scrapokkazeo.scrap()
